@@ -14,11 +14,13 @@
                 <form onsubmit="return validacion()">
                     <div class="form-group">
                       <label for="nombre">Nombre</label>
-                      <input type="text" class="form-control" id="nombre"name="nombre" onfocus="validar()">
+                      <input type="text" class="form-control" id="nombre"name="nombre">
+                      <div class="alert alert-danger mt-4" id="alert" hidden><span>complete el campo nombre</span></div>
                     </div>
                     <div class="form-group">
                       <label for="apellido">Apellido</label>
                       <input type="text" class="form-control" id="apellido">
+                      <div class="alert alert-danger mt-4" id="alert-2" hidden ><span>complete el campo apellido</span></div>
                     </div>
                     <div class="form-group">
                         <label for="edad">Edad</label>
@@ -30,7 +32,8 @@
                       </div>
                       <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="text" class="form-control" id="email">
+                        <div class="alert alert-danger mt-4" id="alert-email" hidden ><span></span></div>
                       </div>
                    
                     <button type="submit" class="btn btn-primary">Submit</button>
